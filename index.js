@@ -49,7 +49,7 @@ const port = process.env.PORT || 9090;
 //=============================================
 
 async function connectToWA() {
-console.log("𝙲𝙾𝙽𝙽𝙴𝙲𝚃𝙸𝙽𝙶 BOOM-MD-V1 🎭...");
+console.log("𝙲𝙾𝙽𝙽𝙴𝙲𝚃𝙸𝙽𝙶 UNI-XMD  🎭...");
 const { state, saveCreds } = await useMultiFileAuthState(__dirname + '/session/')
 var { version } = await fetchLatestBaileysVersion()
 
@@ -77,11 +77,11 @@ require("./plugins/" + plugin);
 }
 });
 console.log('𝙿𝙻𝚄𝙶𝙸𝙽𝚂 𝙵𝙸𝙻𝙴𝚂 𝙸𝙽𝚂𝚃𝙰𝙻𝙻 𝚂𝚄𝙲𝙲𝙴𝚂𝚂𝙵𝚄𝙻𝙻𝚈 ✅')
-console.log('𝙻𝙾𝚁𝙳 BOOM-MD-V1 𝙲𝙾𝙽𝙽𝙴𝙲𝚃𝙴𝙳 𝚃𝙾 𝚆𝙷𝙰𝚃𝚂𝙰𝙿𝙿 𝙴𝙽𝙹𝙾𝚈 ✅')
+console.log('UNI-XMD 𝙲𝙾𝙽𝙽𝙴𝙲𝚃𝙴𝙳 𝚃𝙾 𝚆𝙷𝙰𝚃𝚂𝙰𝙿𝙿 𝙴𝙽𝙹𝙾𝚈 ✅')
 
-let up = ` ʙᴏᴛ⇨⇨ Connected Successfully!!!!!!* ✅ 
+let up = `UNI ʙᴏᴛ⇨⇨ Connected Successfully!!!!!!* ✅ 
 
- ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ BOOM-MD-V1 
+ ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ UNI-XMD 
 
 *🔹 ᴘʀᴇғɪx:* *${prefix}*
 
@@ -89,16 +89,16 @@ let up = ` ʙᴏᴛ⇨⇨ Connected Successfully!!!!!!* ✅
 
 *🖇️Join My WhatsApp Channels✓💗* 
 
-- : https://whatsapp.com/channel/0029VbC7DyBAInPmDLXUYi2e
+- : https://whatsapp.com/channel/0029Vb5uBooJENxuVRMt6o0x
 
-- : ᴜɴᴅᴇꜰɪɴᴇᴅ
+- : CRAZY 😙
 
-*🖇️Subscribe My Youtube Channel✓💗*
+*🖇️UNI MDX CONNECTED*
 
- - : ᴜɴᴅᴇꜰɪɴᴇᴅ
+ - : 🎉️
 
 > *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴍʀ nethum ofc 🤹‍♂️ ʙᴇᴛᴀ ꜱᴇʀᴠɪᴄᴇ*`;
-conn.sendMessage(conn.user.id, { image: { url: `https://files.catbox.moe/dey098.jpg` }, caption: up })
+conn.sendMessage(conn.user.id, { image: { url: `https://files.catbox.moe/bazdsa.jpg` }, caption: up })
 
 }
 })

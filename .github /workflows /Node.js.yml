@@ -1,0 +1,45 @@
+name: Node.js CI
+
+on: push: branches: - main
+
+jobs: build: runs-on: ubuntu-latest
+
+steps:
+- name: Checkout code
+  uses: actions/checkout@v3
+
+- name: Set up Node.js
+  uses: actions/setup-node@v3
+  with:
+    node-version: '18'
+
+- name: Install dependencies
+  run: npm install
+
+- name: Run tests
+  run: npm test
+
+- name: Build and Deploy
+  env:
+    RAILWAY_API_KEY: ${{ secrets.RAILWAY_API_KEY }}
+    HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+    KEYOB_API_KEY: ${{ secrets.KEYOB_API_KEY }}
+  run: |
+    npm run build
+    echo "Deploying to Railway..."
+    curl -X POST https://api.railway.app/v1/projects/YOUR_PROJECT_ID/deploys \
+    -H "Authorization: Bearer $RAILWAY_API_KEY" \
+    -H "Content-Type: application/json" \
+    -d '{"clearCache": true}'
+    echo "Deploying to Heroku..."
+    git init
+    git remote add heroku https://git.heroku.com/YOUR_APP_NAME.git
+    git add .
+    git commit -m "Deploy"
+    git push heroku main
+    echo "Deploying to Keyob..."
+    curl -X POST https://api.keyob.com/v1/projects/YOUR_PROJECT_ID/deploys \
+    -H "Authorization: Bearer $KEYOB_API_KEY" \
+    -H "Content-Type: application/json" \
+    -d '{"clearCache": true}'
+

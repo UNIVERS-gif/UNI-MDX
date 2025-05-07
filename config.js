@@ -6,7 +6,7 @@ function convertToBool(text, fault = 'true') {
     return text === fault ? true : false;
 }
 
-//--------------------------Malvin King--------------------------------------
+//--------------------------NETHUM OFC #--------------------------------------
 module.exports = {
     SESSION_ID: process.env.SESSION_ID || "ඔයාගේ session id එක දාන්න",
     CAPTION: process.env.CAPTION || "*©  Gᴇɴᴇʀᴀᴛᴇᴅ Bʏ ᴍʀ ɴᴇᴛʜᴜ ᴏꜰᴄ*",
@@ -28,9 +28,9 @@ module.exports = {
     AUTO_REACT: process.env.AUTO_REACT || "true",
     HEART_REACT: process.env.HEART_REACT || "true",
     OWNER_REACT: process.env.OWNER_REACT || "true",
-    BOT_NAME: process.env.BOT_NAME || "『 BOOM-MD 』",
+    BOT_NAME: process.env.BOT_NAME || "『 UNI-MDX 』",
     AUTO_STATUS_REPLY: process.env.AUTO_STATUS_REPLY || "false",
-    AUTO_STATUS__MSG: process.env.AUTO_STATUS__MSG || "`Status Seen By BOOM-MD Bot 🦄 `",
+    AUTO_STATUS__MSG: process.env.AUTO_STATUS__MSG || "`Status Seen By UNI-MDX Bot 🦄 `",
     OMDB_API_KEY: process.env.OMDB_API_KEY || "76cb7f39", // omdbapi.com
 };
-//--------------MADE BY MALVIN KING 2025---------------->-
+//--------------MADE BY NETHUM OFC 2025---------------->-

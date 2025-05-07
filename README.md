@@ -245,6 +245,6 @@ UNI-XMD 😙🎉️👿
 </p>
 <p align="center">
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Rubik+Moonrocks&size=65&pause=1000&color=00FFFF&background=000000&center=true&vCenter=true&width=1000&height=150&lines=;POWERFULL+SIMPLE+WATSAPP+BOT;" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Rubik+Moonrocks&size=65&pause=1000&color=00FFFF&background=000000&center=true&vCenter=true&width=1000&height=150&lines=;POWERFULL;SIMPLE;WATSAPP;BOT;" alt="Typing SVG" />
 </a>
 </p>
